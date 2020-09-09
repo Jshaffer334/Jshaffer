@@ -1,0 +1,7 @@
+public class analogDriver
+{
+    public static void main(String[]args)
+    {
+        analog amount = new analog(37);
+    }
+}

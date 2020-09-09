@@ -1,0 +1,26 @@
+public class midnight
+{
+    private int time, hours, mins;   
+    public midnight(int secs)
+    {
+        time = secs;
+    }
+
+    public void calc()
+    {
+        hours = time / 3600;
+        mins = time / 60;
+    }
+
+    public void display()
+    {
+        System.out.println(hours + " hours past midnight");
+        System.out.println(mins + " minutes past midnight");
+    }
+
+    public void run()
+    {
+        calc();
+        display();
+    } 
+}

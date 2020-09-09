@@ -1,0 +1,11 @@
+public class analog
+{
+    private int minutes, degrees;
+    
+    public analog(int amount)
+    {
+        minutes = amount;
+        degrees = minutes * 6;
+        System.out.println(degrees + " degrees on the clock");
+    }
+}

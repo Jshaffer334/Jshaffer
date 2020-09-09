@@ -1,0 +1,8 @@
+public class desksDriver
+{
+    public static void main(String[]args)
+    {
+        desks amount = new desks();
+        amount.calc();
+    }
+}

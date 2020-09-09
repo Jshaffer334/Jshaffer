@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class desks
+{
+    private int classes, students, desks, remainder, class1, class2, class3, total;
+    Scanner in;
+    public desks()
+    {
+        in = new Scanner(System.in);
+        classes = 3;
+    }
+
+    public void calc()
+    {
+        System.out.println("How many students are in the frist class?");
+        students = in.nextInt();
+        desks = students / 2;
+        remainder = students % 2;
+        class1 = desks + remainder;
+        System.out.println(class1 + " desks are needed");
+        
+        System.out.println("How many students are in the second class?");
+        students = in.nextInt();
+        desks = students / 2;
+        remainder = students % 2;
+        class2 = desks + remainder;
+        System.out.println(class2 + " desks are needed");
+        
+        System.out.println("How many students are in the third class?");
+        students = in.nextInt();
+        desks = students / 2;
+        remainder = students % 2;
+        class3 = desks + remainder;
+        System.out.println(class3 + " desks are needed");
+        
+        total = class1 + class2 + class3;
+        System.out.println(total + " desks are needed total");
+    }
+}

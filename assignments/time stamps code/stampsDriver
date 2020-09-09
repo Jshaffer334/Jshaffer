@@ -1,0 +1,9 @@
+public class stampsDriver
+{
+    public static void main(String[]args)
+    {
+        stamps passed = new stamps();
+        passed.ask();
+        passed.calc();
+    }
+}

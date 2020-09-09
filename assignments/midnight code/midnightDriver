@@ -1,0 +1,8 @@
+public class midnightDriver
+{
+    public static void main(String[]args)
+    {
+        midnight secs = new midnight(12345);
+        secs.run();
+    }
+}

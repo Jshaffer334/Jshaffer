@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class stamps
+{
+    private int hours1, mins1, secs1, hours2, mins2, secs2, myHours, myMins, mySecs, time;
+    private Scanner in;
+    public stamps()
+    {
+        in = new Scanner(System.in);
+    }
+    
+    public void ask()
+    {
+        System.out.println("First time stamp");
+        System.out.println("how many hours have passed since midnight?");
+        hours1 = in.nextInt();
+        System.out.println("how many minutes have passed since the hour?");
+        mins1 = in.nextInt();
+        System.out.println("how many seconds have passed since the minute?");
+        secs1 = in.nextInt();
+        
+        System.out.println("Second time stamp");
+        System.out.println("how many hours have passed since midnight?");
+        hours2 = in.nextInt();
+        System.out.println("how many minutes have passed since the hour?");
+        mins2 = in.nextInt();
+        System.out.println("how many seconds have passed since the minute?");
+        secs2 = in.nextInt();
+    }
+    
+    public void calc()
+    {
+        myHours = hours2 - hours1;
+        myMins = mins2 - mins1;
+        mySecs = secs2 - secs1;
+        time = (myHours * 3600) + (myMins * 60) + mySecs;
+        System.out.println(time + " seconds have passed");
+    }
+}
